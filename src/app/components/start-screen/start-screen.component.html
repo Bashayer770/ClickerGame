@@ -1,0 +1,17 @@
+<div
+  class="h-screen flex flex-col justify-center items-center bg-black text-white"
+>
+  <div class="h-[30%] w-screen flex flex-col justify-center items-center">
+    <img
+      src="https://cdn-icons-png.freepik.com/512/5507/5507797.png"
+      class="h-[200px] w-[200px] object-cover opacity-80"
+    />
+  </div>
+  <h1 class="text-5xl font-bold mb-8 text-white">Destroy the Death Star</h1>
+  <button
+    class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded transition"
+    (click)="startGame.emit()"
+  >
+    Start Game
+  </button>
+</div>

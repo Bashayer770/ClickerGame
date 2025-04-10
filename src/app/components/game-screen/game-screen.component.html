@@ -1,0 +1,17 @@
+<div
+  class="h-screen bg-black text-white flex flex-col items-center justify-center gap-8"
+>
+  <div class="w-64 h-3 bg-gray-600 rounded-full overflow-hidden mt-4">
+    <div
+      class="h-full bg-yellow-400 transition-all duration-100"
+      [style.width.%]="(timeLeft / 10) * 100"
+    ></div>
+  </div>
+
+  <div class="flex gap-12 text-2xl font-semibold">
+    <p>Score: {{ score }}</p>
+    <p>Time Left: {{ timeLeft }}s</p>
+  </div>
+
+  <app-death-star (hit)="increaseScore()"></app-death-star>
+</div>

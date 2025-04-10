@@ -1,0 +1,14 @@
+<div
+  class="h-screen bg-black text-white flex flex-col items-center justify-center gap-6"
+>
+  <h1 class="text-5xl font-bold text-red-500">Game Over</h1>
+  <p class="text-2xl">
+    Your score: <span class="text-yellow-300">{{ score }}</span>
+  </p>
+  <button
+    (click)="playAgain.emit()"
+    class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-3 rounded transition"
+  >
+    Play Again
+  </button>
+</div>

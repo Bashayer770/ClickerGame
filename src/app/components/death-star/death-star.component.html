@@ -1,0 +1,17 @@
+<div class="transition-transform duration-1100 ease-out">
+  <div class="relative h-64 w-64 rounded-full bg-gray-700 shadow-lg">
+    <img
+      [src]="imageSrc"
+      alt="Death Star"
+      class="absolute h-full w-full object-cover opacity-80 rounded-full"
+    />
+
+    <div
+      *ngIf="!gameOver"
+      class="absolute z-10 w-8 h-8 bg-green-400 rounded-full animate-pulse cursor-pointer transition-all duration-200"
+      [style.left]="targetX"
+      [style.top]="targetY"
+      (click)="onTargetClick()"
+    ></div>
+  </div>
+</div>
